@@ -1,2 +1,2 @@
 # Chess_game
-My Fav online game! &lt;3
+As a chess player myself, I was inpired to create a 2 player chess game with help of python using pygame, Please do play and enjoy!
