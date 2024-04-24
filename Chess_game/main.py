@@ -77,7 +77,7 @@ winner = ''
 game_over = False
 
 
-# draw main game board
+#Draw main game board
 def draw_board():
     for i in range(32):
         column = i % 4
@@ -98,7 +98,7 @@ def draw_board():
         screen.blit(medium_font.render('FORFEIT', True, 'black'), (810, 830))
 
 
-# draw pieces onto board
+#Draw pieces onto board
 def draw_pieces():
     for i in range(len(white_pieces)):
         index = piece_list.index(white_pieces[i])
@@ -123,7 +123,7 @@ def draw_pieces():
                                                   100, 100], 2)
 
 
-# function to check all pieces valid options on board
+# Function to check all pieces valid options on the chess board
 def check_options(pieces, locations, turn):
     moves_list = []
     all_moves_list = []
@@ -146,7 +146,7 @@ def check_options(pieces, locations, turn):
     return all_moves_list
 
 
-# check king valid moves
+#Check king valid moves
 def check_king(position, color):
     moves_list = []
     if color == 'white':
@@ -164,7 +164,7 @@ def check_king(position, color):
     return moves_list
 
 
-# check queen valid moves
+# Check queen valid moves
 def check_queen(position, color):
     moves_list = check_bishop(position, color)
     second_list = check_rook(position, color)
@@ -173,7 +173,7 @@ def check_queen(position, color):
     return moves_list
 
 
-# check bishop moves
+# Check bishop moves
 def check_bishop(position, color):
     moves_list = []
     if color == 'white':
