@@ -28,6 +28,7 @@ turn_step = 0
 selection = 100
 valid_moves = []
 # load in game piece images (queen, king, rook, bishop, knight, pawn) x 2
+#JUST A SMALL NOTE THAT IN MY PC PATH OF USERS\\AIMAN SHARIFF,I HAVE PUT 2 BACKSLASHES TO AVOID UNICODE ERRORS...
 black_queen = pygame.image.load('C:\\Users\\Aiman Shariff\\OneDrive\\Desktop\\Chess_game\\Chess_pieces_pics\\images\\black queen.png')
 black_queen = pygame.transform.scale(black_queen, (80, 80))
 black_queen_small = pygame.transform.scale(black_queen, (45, 45))
